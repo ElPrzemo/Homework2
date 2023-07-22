@@ -37,4 +37,12 @@ public class Customer extends Person {
                 ", transactionsNumber=" + transactionNumber +
                 "}";
     }
+
+//    public void updateCustomerProfile(String name, String surname, String address, String email) {
+//        setName(name);
+//        setSurname(surname);
+//        setAddress(address);
+//        setEmailAdress(email);
+//    }
+
 }

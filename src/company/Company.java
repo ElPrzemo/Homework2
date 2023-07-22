@@ -22,7 +22,7 @@ public class Company {
         order1.addProduct(new Product("Soap", 4, PRODUCT_TYPE.COSMETICS));
         order1.addProduct(new Product("T-Shirt", 40, PRODUCT_TYPE.CLOTHES));
 
-        orderService.addOrder(order1); // Dodajemy zamówienie do usługi OrderService
+        orderService.addOrder(order1);
 
         System.out.println("Total cost: " + order1.getTotalCost());
         System.out.println(order1.getCustomer());
@@ -33,11 +33,15 @@ public class Company {
         order2.addProduct(new Product("Soap", 4, PRODUCT_TYPE.COSMETICS));
         order2.addProduct(new Product("T-Shirt", 40, PRODUCT_TYPE.CLOTHES));
 
-        orderService.addOrder(order2); // Dodajemy kolejne zamówienie do usługi OrderService
+        orderService.addOrder(order2);
 
         System.out.println(customer.getTransactionNumber());
 
         System.out.println("All orders:");
-        orderService.displayOrders(); // Wyświetlamy wszystkie zamówienia
+        orderService.displayOrders();
+
+        orderService.updateCustomerProfile(String.valueOf(1),"PRzem", "Włodar", "Otwock", "www@gmail.com");
     }
+
+
 }

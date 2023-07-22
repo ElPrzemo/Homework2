@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="Added orderDelete method">
+    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/service/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/person/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Employer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -77,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689702758544</updated>
       <workItem from="1689702759767" duration="5436000" />
-      <workItem from="1690005374027" duration="16099000" />
+      <workItem from="1690005374027" duration="19695000" />
     </task>
     <task id="LOCAL-00001" summary="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add.">
       <created>1690014233061</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690022034770</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added displayOrders in OrderSer">
+      <created>1690029046704</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1690029046704</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +117,7 @@
     <MESSAGE value="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add." />
     <MESSAGE value="Added counting number of transactions for customer." />
     <MESSAGE value="Added orderDelete method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added orderDelete method" />
+    <MESSAGE value="Added displayOrders in OrderSer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added displayOrders in OrderSer" />
   </component>
 </project>

@@ -36,5 +36,11 @@ public class Employer extends Person {
                 ", salary=" + salary +
                 "} " + super.toString();
     }
+
+    public void giveRise(double percentage){
+        this.salary= (int) (salary *percentage);
+
+
+    }
 }
 

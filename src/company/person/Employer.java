@@ -1,8 +1,9 @@
-package company;
+package company.person;
 
-import java.math.BigDecimal;
+import company.person.EmployerType;
+import company.person.Person;
 
-public class Employer extends Person{
+public class Employer extends Person {
     private EmployerType type;
     private int salary;
 

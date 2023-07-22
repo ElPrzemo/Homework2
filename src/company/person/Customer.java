@@ -1,4 +1,4 @@
-package company;
+package company.person;
 
 public class Customer extends Person {
     private  String emailAdress;

@@ -13,11 +13,12 @@ public class Order {
     private List<Product> products;
     private double totalCost;
 
-    public Order() {
+    public Order(Customer customer) {
         this.orderId = orderIdCounter++;
         this.customer = customer;
         this.products = new ArrayList<>();
         this.totalCost = 0.0;
+        customer.incrementTransactionNumber();
     }
 
     public Order(int orderId, Customer customer, List<Product> products) {
@@ -25,6 +26,7 @@ public class Order {
         this.customer = customer;
         this.products = products;
         this.totalCost = calculateTotalCost();
+        customer.incrementTransactionNumber();
     }
 
     public Order(String orderId, List<String> products) {

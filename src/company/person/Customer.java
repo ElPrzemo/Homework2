@@ -1,13 +1,15 @@
 package company.person;
 
 public class Customer extends Person {
-    private  String emailAdress;
-    private int transactionsNumber;
 
-    public Customer(String name, String surname, String address, String emailAdress, int transactionsNumber) {
+    private  String emailAdress;
+
+    private  int transactionNumber =0;
+
+    public Customer(String name, String surname, String address, String emailAdress) {
         super(name, surname, address);
         this.emailAdress = emailAdress;
-        this.transactionsNumber = transactionsNumber;
+        this.transactionNumber = transactionNumber;
     }
 
     public String getEmailAdress() {
@@ -18,19 +20,21 @@ public class Customer extends Person {
         this.emailAdress = emailAdress;
     }
 
-    public int getTransactionsNumber() {
-        return transactionsNumber;
+
+
+    public  int getTransactionNumber() {
+        return transactionNumber;
     }
 
-    public void setTransactionsNumber(int transactionsNumber) {
-        this.transactionsNumber = transactionsNumber;
+    public  void incrementTransactionNumber() {
+        transactionNumber++;
     }
 
     @Override
     public String toString() {
-        return "Customer{" +
+        return "Customer{ " +super.toString() +
                 "emailAdress='" + emailAdress + '\'' +
-                ", transactionsNumber=" + transactionsNumber +
-                "} " + super.toString();
+                ", transactionsNumber=" + transactionNumber +
+                "}";
     }
 }

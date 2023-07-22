@@ -10,10 +10,10 @@ public class Company {
 
     public static void main(String[] args) {
 
-        Customer customer = new Customer("Przemek", "Włodarczyk", "Otwock", "mail@gmail.com", 50);
+        Customer customer = new Customer("Przemek", "Włodarczyk", "Otwock", "mail@gmail.com");
 
 
-        Order order1 = new Order();
+        Order order1 = new Order(customer);
         order1.addProduct(new Product("Potato", 5, PRODUCT_TYPE.FOOD));
         order1.addProduct(new Product("Potato", 7,PRODUCT_TYPE.FOOD));
         order1.addProduct(new Product("Tomato",8, PRODUCT_TYPE.FOOD));
@@ -23,6 +23,16 @@ public class Company {
 
 
         System.out.println("Total cost: " + order1.getTotalCost());
+        System.out.println(order1.getCustomer());
+
+        System.out.println(customer.getTransactionNumber());
+
+        Order order2= new Order(customer);
+        order2.addProduct(new Product("Potatos", 8, PRODUCT_TYPE.FOOD));
+
+        System.out.println(customer.getTransactionNumber());
+
+
 
 
     }

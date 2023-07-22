@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Homework2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/person/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/person/Employer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/person/EmployerType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/person/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/products/PRODUCT_TYPE.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/products/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/service/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Company.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/service/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,11 +76,38 @@
       <option name="presentableId" value="Default" />
       <updated>1689702758544</updated>
       <workItem from="1689702759767" duration="5436000" />
-      <workItem from="1690005374027" duration="6961000" />
+      <workItem from="1690005374027" duration="10825000" />
     </task>
+    <task id="LOCAL-00001" summary="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add.">
+      <created>1690014233061</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1690014233061</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add." />
+    <option name="LAST_COMMIT_MESSAGE" value="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/company/Company.java</url>
+          <line>10</line>
+          <properties class="company.Company" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

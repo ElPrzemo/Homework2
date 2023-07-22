@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="">
+    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="Added orderDelete method">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/products/Product.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/service/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/OrderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1689702758544</updated>
       <workItem from="1689702759767" duration="5436000" />
-      <workItem from="1690005374027" duration="10825000" />
+      <workItem from="1690005374027" duration="16099000" />
     </task>
     <task id="LOCAL-00001" summary="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add.">
       <created>1690014233061</created>
@@ -85,7 +86,21 @@
       <option name="project" value="LOCAL" />
       <updated>1690014233061</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added counting number of transactions for customer.">
+      <created>1690021453922</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1690021453922</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Added orderDelete method">
+      <created>1690022034770</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1690022034770</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,21 +108,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add." />
-    <option name="LAST_COMMIT_MESSAGE" value="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add." />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/company/Company.java</url>
-          <line>10</line>
-          <properties class="company.Company" method="main">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Added counting number of transactions for customer." />
+    <MESSAGE value="Added orderDelete method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added orderDelete method" />
   </component>
 </project>

@@ -6,6 +6,8 @@ public class Product {
     private PRODUCT_TYPE type;
 
 
+
+
     public Product(String name, double price, PRODUCT_TYPE type) {
         this.name = name;
         this.price = price;

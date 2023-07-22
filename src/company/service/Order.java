@@ -18,7 +18,7 @@ public class Order {
         this.customer = customer;
         this.products = new ArrayList<>();
         this.totalCost = 0.0;
-        customer.incrementTransactionNumber();
+        this.customer.incrementTransactionNumber();
     }
 
     public Order(int orderId, Customer customer, List<Product> products) {
@@ -29,8 +29,11 @@ public class Order {
         customer.incrementTransactionNumber();
     }
 
-    public Order(String orderId, List<String> products) {
+    public Order(String orderId, List<Product> products) {
 
+    }
+
+    public Order(String orderId, Customer customer, List<Product> products) {
     }
 
 
@@ -75,6 +78,4 @@ public class Order {
     public int getProductQuantity() {
         return products.size();
     }
-
-
 }

@@ -4,6 +4,7 @@ import company.person.Customer;
 import company.products.PRODUCT_TYPE;
 import company.products.Product;
 import company.service.Order;
+import company.service.OrderService;
 
 
 public class Company {
@@ -12,6 +13,7 @@ public class Company {
 
         Customer customer = new Customer("Przemek", "Włodarczyk", "Otwock", "mail@gmail.com");
 
+        OrderService orderService = new OrderService();
 
         Order order1 = new Order(customer);
         order1.addProduct(new Product("Potato", 5, PRODUCT_TYPE.FOOD));
@@ -31,6 +33,11 @@ public class Company {
         order2.addProduct(new Product("Potatos", 8, PRODUCT_TYPE.FOOD));
 
         System.out.println(customer.getTransactionNumber());
+
+        orderService.deleteOrder(order2);
+
+
+
 
 
 

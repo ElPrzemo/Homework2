@@ -1,6 +1,7 @@
 package company;
 
 import company.person.Customer;
+import company.person.Employer;
 import company.products.PRODUCT_TYPE;
 import company.products.Product;
 import company.service.Order;
@@ -10,11 +11,13 @@ public class Company {
 
     public static void main(String[] args) {
 
+        Employer employer = new Employer("Franek", "Brzęczyszczykiewicz", "Warszawa", 4500);
+
         Customer customer = new Customer("Przemek", "Włodarczyk", "Otwock", "mail@gmail.com");
 
         OrderService orderService = new OrderService();
 
-        Order order1 = new Order(customer);
+        Order order1 = new Order(customer, employer);
         order1.addProduct(new Product("Potato", 5, PRODUCT_TYPE.FOOD));
         order1.addProduct(new Product("Potato", 7, PRODUCT_TYPE.FOOD));
         order1.addProduct(new Product("Tomato", 8, PRODUCT_TYPE.FOOD));
@@ -28,7 +31,7 @@ public class Company {
         System.out.println(order1.getCustomer());
         System.out.println(customer.getTransactionNumber());
 
-        Order order2 = new Order(customer);
+        Order order2 = new Order(customer, employer);
         order2.addProduct(new Product("Potatos", 8, PRODUCT_TYPE.FOOD));
         order2.addProduct(new Product("Soap", 4, PRODUCT_TYPE.COSMETICS));
         order2.addProduct(new Product("T-Shirt", 40, PRODUCT_TYPE.CLOTHES));
@@ -40,7 +43,21 @@ public class Company {
         System.out.println("All orders:");
         orderService.displayOrders();
 
-        orderService.updateCustomerProfile(String.valueOf(1),"PRzem", "Włodar", "Otwock", "www@gmail.com");
+        Order order3 = new Order(customer, employer);
+        order3.addProduct(new Product("Trousers", 47, PRODUCT_TYPE.CLOTHES));
+
+        Order order4 = new Order(customer, employer);
+        order4.addProduct(new Product("Blouse", 452, PRODUCT_TYPE.CLOTHES));
+
+        System.out.println("Employer Franek prepared: " + employer.getPreparedOrders() + " orders");
+
+        System.out.println("Obecna wypłata pracownika to:" + employer.getSalary());
+
+        employer.giveRiseByMotivationSystem(employer.getPreparedOrders());
+
+        System.out.println();
+
+        System.out.println("Wypłata po podwyżce pracownika to:" + employer.getSalary());
     }
 
 

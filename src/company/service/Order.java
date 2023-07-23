@@ -1,6 +1,7 @@
 package company.service;
 
 import company.person.Customer;
+import company.person.Employer;
 import company.products.Product;
 
 import java.util.ArrayList;
@@ -13,25 +14,18 @@ public class Order {
     private List<Product> products;
     private double totalCost;
 
-    public Order(Customer customer) {
+    public Order(Customer customer, Employer employer) {
         this.orderId = orderIdCounter++;
         this.customer = customer;
         this.products = new ArrayList<>();
         this.totalCost = 0.0;
         this.customer.incrementTransactionNumber();
-    }
-
-    public Order(int orderId, Customer customer, List<Product> products) {
-        this.orderId = orderId;
-        this.customer = customer;
-        this.products = products;
-        this.totalCost = calculateTotalCost();
-        customer.incrementTransactionNumber();
-    }
-
-    public Order(String orderId, List<Product> products) {
+        employer.increseNumberOfPreparedOrders();
 
     }
+
+
+
 
     public Order(String orderId, Customer customer, List<Product> products) {
     }

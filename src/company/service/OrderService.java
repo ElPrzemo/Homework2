@@ -12,6 +12,13 @@ public class OrderService {
     private List<Order> inventory;
     private Map<String, Customer> customers;
 
+    public OrderService(Map<String, Customer> customers) {
+        this.inventory = new ArrayList<>();
+        this.customers = customers;
+    }
+
+
+
     public OrderService() {
         this.inventory = new ArrayList<>();
     }
@@ -23,7 +30,6 @@ public class OrderService {
     public void deleteOrder(String orderId) {
         inventory.removeIf(order -> Integer.toString(order.getOrderId()).equals(orderId));
     }
-
     public List<Order> displayOrders() {
         for (Order order : inventory) {
             System.out.println("Order ID: " + order.getOrderId());
@@ -38,15 +44,17 @@ public class OrderService {
         return inventory;
     }
 
-    public void updateCustomerProfile(String customerId, String name, String surname, String address, String email) {
-        if (customers.containsKey(customerId)) {
-            Customer customer = customers.get(customerId);
-            customer.setName(name);
-            customer.setSurname(surname);
-            customer.setAddress(address);
-            customer.setEmailAdress(email);
-        } else {
-            System.out.println("Customer with ID " + customerId + " does not exist.");
+
+    public void updateCustomerProfile(int customerId, String name, String surname, String address, String email) {
+        for (Order order : inventory) {
+            if (order.getCustomer().getCustomerId() == customerId) {
+                order.getCustomer().setName(name);
+                order.getCustomer().setSurname(surname);
+                order.getCustomer().setAddress(address);
+                order.getCustomer().setEmailAdress(email);
+                return;
+            }
         }
+        System.out.println("Customer with ID " + customerId + " does not exist.");
     }
 }

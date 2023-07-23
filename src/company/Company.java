@@ -7,15 +7,21 @@ import company.products.Product;
 import company.service.Order;
 import company.service.OrderService;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Company {
 
     public static void main(String[] args) {
 
         Employer employer = new Employer("Franek", "Brzęczyszczykiewicz", "Warszawa", 4500);
-
         Customer customer = new Customer("Przemek", "Włodarczyk", "Otwock", "mail@gmail.com");
 
-        OrderService orderService = new OrderService();
+
+        Map<String, Customer> customers = new HashMap<>();
+        customers.put(Integer.toString(customer.getCustomerId()), customer);
+
+        OrderService orderService = new OrderService(customers);
 
         Order order1 = new Order(customer, employer);
         order1.addProduct(new Product("Potato", 5, PRODUCT_TYPE.FOOD));
@@ -58,7 +64,19 @@ public class Company {
         System.out.println();
 
         System.out.println("Wypłata po podwyżce pracownika to:" + employer.getSalary());
+
+
+
+       orderService.updateCustomerProfile(Integer.parseInt(String.valueOf(1
+       )), "Janusz", "Moczywąs", "Wąchock", "moczywas@mail.com");
+       System.out.println(customer.toString());
+
+       orderService.deleteOrder(order1.toString());
     }
+
+
+
+
 
 
 }

@@ -2,6 +2,9 @@ package company.person;
 
 public class Customer extends Person {
 
+
+    private static int customerIdCounter = 1;
+    private int customerId;
     private  String emailAdress;
 
     private  int transactionNumber =0;
@@ -9,7 +12,7 @@ public class Customer extends Person {
     public Customer(String name, String surname, String address, String emailAdress) {
         super(name, surname, address);
         this.emailAdress = emailAdress;
-        this.transactionNumber = transactionNumber;
+        this.customerId=customerIdCounter;
     }
 
     public String getEmailAdress() {
@@ -20,7 +23,9 @@ public class Customer extends Person {
         this.emailAdress = emailAdress;
     }
 
-
+    public int getCustomerId() {
+        return customerId;
+    }
 
     public  int getTransactionNumber() {
         return transactionNumber;
@@ -33,16 +38,9 @@ public class Customer extends Person {
     @Override
     public String toString() {
         return "Customer{ " +super.toString() +
+                "ID=" + customerId +
                 "emailAdress='" + emailAdress + '\'' +
                 ", transactionsNumber=" + transactionNumber +
                 "}";
     }
-
-//    public void updateCustomerProfile(String name, String surname, String address, String email) {
-//        setName(name);
-//        setSurname(surname);
-//        setAddress(address);
-//        setEmailAdress(email);
-//    }
-
 }

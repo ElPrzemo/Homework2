@@ -1,7 +1,5 @@
 package company.person;
 
-
-
 public class Employer extends Person {
 
     private int salary;
@@ -12,8 +10,6 @@ public class Employer extends Person {
         super(name, surname, address);
         this.salary = salary;
     }
-
-
     public int getSalary() {
         return salary;
     }
@@ -43,7 +39,7 @@ public class Employer extends Person {
 
     public void giveRiseByMotivationSystem(int preparedOrders){
         if(preparedOrders>3){
-            this.salary= salary *= 1.2;
+            salary *= 1.2;
         } else if (preparedOrders>6) {
             this.salary=salary *=1.4;
         }else if (preparedOrders>9){

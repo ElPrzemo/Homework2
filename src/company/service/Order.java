@@ -11,8 +11,11 @@ public class Order {
     private static int orderIdCounter = 1;
     private int orderId;
     private Customer customer;
+    private Employer employer;
     private List<Product> products;
     private double totalCost;
+
+
 
     public Order(Customer customer, Employer employer) {
         this.orderId = orderIdCounter++;
@@ -22,12 +25,6 @@ public class Order {
         this.customer.incrementTransactionNumber();
         employer.increseNumberOfPreparedOrders();
 
-    }
-
-
-
-
-    public Order(String orderId, Customer customer, List<Product> products) {
     }
 
 

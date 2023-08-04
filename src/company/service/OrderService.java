@@ -9,7 +9,7 @@ import java.util.Map;
 
 
 public class OrderService {
-    private List<Order> inventory;
+    public List<Order> inventory;
     private Map<String, Customer> customers;
 
     public OrderService(Map<String, Customer> customers) {
@@ -42,19 +42,6 @@ public class OrderService {
             System.out.println();
         }
         return inventory;
-    }
+    }}
 
 
-    public void updateCustomerProfile(int customerId, String name, String surname, String address, String email) {
-        for (Order order : inventory) {
-            if (order.getCustomer().getCustomerId() == customerId) {
-                order.getCustomer().setName(name);
-                order.getCustomer().setSurname(surname);
-                order.getCustomer().setAddress(address);
-                order.getCustomer().setEmailAdress(email);
-                return;
-            }
-        }
-        System.out.println("Customer with ID " + customerId + " does not exist.");
-    }
-}

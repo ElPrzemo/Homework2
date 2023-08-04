@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="Final version before refactor.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/administration/Admnistration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/administration/EmployerService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/company/person/EmployerType.java" afterDir="false" />
+    <list default="true" id="dd90874f-fec2-40cf-882e-abb5c8400ff9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/company/administration/TaskMenager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/company/Company.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/Company.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/person/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/person/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/company/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/administration/Admnistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/administration/Admnistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/administration/EmployerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/administration/EmployerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/person/Employer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/Employer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/company/person/EmployerType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/company/person/EmployerType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -87,7 +85,7 @@
       <workItem from="1690113931336" duration="4157000" />
       <workItem from="1690566080055" duration="1785000" />
       <workItem from="1690607442221" duration="108000" />
-      <workItem from="1691138202936" duration="2381000" />
+      <workItem from="1691138202936" duration="9688000" />
     </task>
     <task id="LOCAL-00001" summary="Narazie jakoś to idzie, zrobiłem dopiero zarys aplikacji i serwis z jedną metodą add.">
       <created>1690014233061</created>
@@ -131,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1690114250403</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Added Administration, EmployerService, EmployerType, updateCustomerProfileMethod() was moved from OrderService to administration">
+      <created>1691142560495</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1691142560495</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,14 +149,15 @@
     <MESSAGE value="Added displayOrders in OrderSer" />
     <MESSAGE value="Added displayOrders in OrderSer  + giveRise in Employer" />
     <MESSAGE value="Final version before refactor." />
-    <option name="LAST_COMMIT_MESSAGE" value="Final version before refactor." />
+    <MESSAGE value="Added Administration, EmployerService, EmployerType, updateCustomerProfileMethod() was moved from OrderService to administration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Administration, EmployerService, EmployerType, updateCustomerProfileMethod() was moved from OrderService to administration" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/company/Company.java</url>
-          <line>13</line>
+          <line>9</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>

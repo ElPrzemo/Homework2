@@ -2,51 +2,61 @@ package company.person;
 
 public class Employer extends Person {
 
-    private int salary;
+    private double salary;
 
-    private int preparedOrders = 0;
+    private int ordersSold = 0;
 
-    public Employer(String name, String surname, String address, int salary) {
+    private double yearsOfWork;
+
+
+    private EmployerType employerType;
+
+    public Employer(String name, String surname, String address, double salary, int ordersSold, double yearsOfWork, EmployerType employerType) {
         super(name, surname, address);
         this.salary = salary;
+        this.ordersSold = ordersSold;
+        this.yearsOfWork = yearsOfWork;
+        this.employerType = employerType;
     }
-    public int getSalary() {
+
+
+    public double getSalary() {
         return salary;
     }
 
-    public void setSalary(int salary) {
+    public double setSalary(double salary) {
         this.salary = salary;
+        return salary;
     }
+
+    public EmployerType getEmployerType() {
+        return employerType;
+    }
+
+    public double getYearsOfWork() {
+        return yearsOfWork;
+    }
+
+    public int getPreparedOrders() {
+        return ordersSold;
+    }
+
+    public void increseNumberOfPreparedOrders() {
+        ordersSold++;
+    }
+
 
     @Override
     public String toString() {
-        return "Employer{" +super.toString() +
-                ", salary=" + salary +
-                "} ";
-    }
-
-    public  int getPreparedOrders() {
-        return preparedOrders;
-    }
-
-    public  void increseNumberOfPreparedOrders() {
-        preparedOrders++;
-    }
-
-    public void giveRiseByBossDecision(double percentage){
-        this.salary= (int) (salary *percentage);
-    }
-
-    public void giveRiseByMotivationSystem(int preparedOrders){
-        if(preparedOrders>3){
-            salary *= 1.2;
-        } else if (preparedOrders>6) {
-            this.salary=salary *=1.4;
-        }else if (preparedOrders>9){
-            this.salary=salary *=1.6;
-        } else {
-            System.out.println("You should work more!");
-        }
+        return "Employer{" +
+                "salary=" + salary +
+                ", ordersSold=" + ordersSold +
+                ", yearsOfWork=" + yearsOfWork +
+                ", employerType=" + employerType +
+                ", name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", address='" + address + '\'' +
+                "} " + super.toString();
     }
 }
 
